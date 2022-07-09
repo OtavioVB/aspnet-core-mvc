@@ -11,12 +11,6 @@ namespace WebAppClientes.Controllers
             return View();
         }
 
-        [HttpPost]
-        public IActionResult MostrarTexto(TextoModel textmodel)
-        {
-            return View(textmodel);
-        }
-
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {
