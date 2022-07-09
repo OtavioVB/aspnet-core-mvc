@@ -9,6 +9,7 @@
       "WebAppClientes/1.0.0": {
         "dependencies": {
           "Microsoft.VisualStudio.Web.CodeGeneration.Design": "6.0.6",
+          "Newtonsoft.Json": "13.0.1",
           "Swashbuckle.AspNetCore": "6.3.0"
         },
         "runtime": {
