@@ -1,0 +1,16 @@
+﻿@model TextoModel;
+
+@{
+    ViewData["Title"] = "Página Inicial";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Bem-Vindo <strong>Otávio</strong></h1>
+    <form asp-action="MostrarTexto">
+      <div class="form-group">
+        <label for="exampleInputEmail1">Texto</label>
+        <input type="text" class="form-control" asp-for="Texto" placeholder="Enter email">
+      </div>
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+</div>
