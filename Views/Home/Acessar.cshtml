@@ -1,0 +1,18 @@
+﻿@model WebAppClientes.Models.InputModel
+@{
+    ViewData["Title"] = "Página Inicial";
+}
+
+<div class="text-center">
+    <h1>Página Inicial da Aba de Clientes</h1>
+    <br>
+    <div class="text-center">
+        <form asp-action="Mostrar">
+          <div class="form-group">
+            <label for="CienteName">Nome do Cliente</label>
+            <input asp-for="InputDoUsuario" required type="text" class="form-control" id="ClienteName" placeholder="Nome do Cliente">
+          </div>
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+</div>

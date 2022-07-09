@@ -11,6 +11,18 @@ namespace WebAppClientes.Controllers
             return View();
         }
 
+        public IActionResult Acessar()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public IActionResult Mostrar(InputModel input)
+        {
+            ClientesModel clientes = new ClientesModel(new NomeModel(input.InputDoUsuario));
+            return View(clientes);
+        }
+
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {

@@ -1,0 +1,16 @@
+﻿@model WebAppClientes.Models.ClientesModel
+@{
+    ViewData["Title"] = "Mostrar";
+}
+
+<h1>Mostrar</h1>
+<div>
+    <h4>InfoClientes</h4>
+    <hr/>
+    <dl class="row">
+        @Html.DisplayFor(model => model.Nome.Valor)
+    </dl>
+</div>
+<div>
+    <a asp-action="Index">Voltar</a>
+</div>
